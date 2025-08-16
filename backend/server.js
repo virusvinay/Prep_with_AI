@@ -14,11 +14,13 @@ const app = express();
 // Middleware to handle CORS
 app.use(
   cors({
-    origin: "*",
+    origin: process.env.FRONTEND_URL, // Only allow your frontend
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true,
   })
 );
+
 
 // Connect to MongoDB
 connectDB();
