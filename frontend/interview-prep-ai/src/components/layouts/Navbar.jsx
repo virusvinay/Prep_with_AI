@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className='w-9/10 container mx-auto flex items-center justify-between gap-5'>
             <Link to="/dashboard">
                 <h2 className='text-lg md:text-xl font-medium text-black leading-5'>
-                    Interview Prep AI                    
+                     Prep with Ai                 
                 </h2>
             </Link>
             <ProfileInfoCard/> 
